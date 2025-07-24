@@ -1,26 +1,26 @@
-## 关于 Panda Laravel
+## About Panda Laravel
 
-Panda Laravel是基于Laravel框架调整后的框架，目的是为了解决Laravel新框架的一些配置问题，以及减少部分CURD的调用，创建一个开箱即用的Laravel框架。同时Panda Laravel调整了部分文件夹结构，内置了一些常用的Composer扩展包以及调试工具，使开发过程更顺手一些。
+Panda Laravel is a framework based on the Laravel framework that has been adjusted to solve some configuration issues of the new Laravel framework, reduce some CRUD calls, and create a ready-to-use Laravel framework. At the same time, Panda Laravel has adjusted some folder structures, built-in some commonly used Composer extension packages and debugging tools to make the development process more convenient.
 
-本项目会持续更新，包含但不限于内置Composer包的添加，以及框架的改动。
+This project will be continuously updated, including but not limited to the addition of built-in Composer packages and framework modifications.
 
-## 基于的Laravel版本
+## Based on Laravel Version
 
 Laravel 5.8.26
 
-## Panda Laravel环境要求
+## Panda Laravel Environment Requirements
 
 - PHP >= 7.1.3
-- OpenSSL PHP 拓展
-- PDO PHP 拓展
-- Mbstring PHP 拓展
-- Tokenizer PHP 拓展
-- XML PHP 拓展
-- Ctype PHP 拓展
-- JSON PHP 拓展
-- BCMath PHP 拓展
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- BCMath PHP Extension
 
-## Panda Laravel安装
+## Panda Laravel Installation
 
 ```
 git clone https://github.com/gorwayne/panda-laravel.git
@@ -34,48 +34,48 @@ cd panda-laravel
 composer install
 ```
 
-## 框架改动如下
+## Framework Modifications
 
 **[.env]**
 
 ```
-APP_NAME=PandaLaravel //修改默认APP名称为PandaLaravel
-LOG_CHANNEL=daily //修改默认日志保存类型为按天保存
+APP_NAME=PandaLaravel //Modified default APP name to PandaLaravel
+LOG_CHANNEL=daily //Modified default log storage type to daily storage
 ```
 
 **[config/app.php]**
 
 ```
-'timezone' => 'Asia/Shanghai' //设置时区为亚洲上
-'locale' => 'zh-CN' //设置默认语言为简体中文
+'timezone' => 'Asia/Shanghai' //Set timezone to Asia/Shanghai
+'locale' => 'zh-CN' //Set default language to Simplified Chinese
 ```
 
 **[public/assets]**
 
-public目录下新增assets文件夹，将静态资源移动到assets目录下
+Added assets folder under public directory, moved static resources to assets directory
 
 **[app/Models]**
 
-app目录下新增Models文件夹，用于存放模型文件，并将原始的User模型移动的次目录下
+Added Models folder under app directory for storing model files, and moved the original User model to this directory
 
 **[app/Support]**
 
-app目录下新增Support文件夹，里面初始了一个helpers.php，用于存放通用的函数
+Added Support folder under app directory, initialized with a helpers.php file for storing common functions
 
-## 内置Composer包
+## Built-in Composer Packages
 
-#### 生产环境包
+#### Production Environment Packages
 
-- [guzzlehttp/guzzle](https://github.com/guzzle/guzzle) HTTP请求包
-- [respect/validation](https://github.com/Respect/Validation) 后端验证包
-- [overtrue/laravel-lang](https://github.com/overtrue/laravel-lang) Laravel多语言支持包
+- [guzzlehttp/guzzle](https://github.com/guzzle/guzzle) HTTP request package
+- [respect/validation](https://github.com/Respect/Validation) Backend validation package
+- [overtrue/laravel-lang](https://github.com/overtrue/laravel-lang) Laravel multi-language support package
 
-#### 开发环境包
+#### Development Environment Packages
 
-- [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) LaravelDebug工具
-- [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer) Laravel日志查询工具(访问：<http://domain/logs>)
-- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) IDE辅助工具
+- [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) Laravel Debug tool
+- [rap2hpoutre/laravel-log-viewer](https://github.com/rap2hpoutre/laravel-log-viewer) Laravel log viewer tool (Access: <http://domain/logs>)
+- [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper) IDE helper tool
 
-## 开源协议
+## Open Source License
 
-基于 [MIT license](https://opensource.org/licenses/MIT) 协议开源
+Open sourced under [MIT license](https://opensource.org/licenses/MIT)
